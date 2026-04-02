@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대게 | AI Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">CDG<span class="accent">.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting fade-up">안녕하세요,</p>
+                <h1 class="hero-title fade-up delay-1">
+                    AI로 실제 문제를 해결하는<br>
+                    개발자 <span class="highlight">최대게</span>입니다.
+                </h1>
+                <p class="hero-desc fade-up delay-2">
+                    서비스 기획부터 AI 개발, 프론트엔드, 배포까지<br>
+                    풀사이클 개발을 추구합니다.
+                </p>
+                <div class="hero-badges fade-up delay-3">
+                    <span class="badge badge-primary">AI Developer</span>
+                    <span class="badge badge-secondary">Service Planner</span>
+                    <span class="badge badge-tertiary">Frontend</span>
+                </div>
+                <div class="hero-cta fade-up delay-3">
+                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                    <a href="https://github.com/choidage" target="_blank" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-up">About Me</h2>
+            <div class="about-grid">
+                <div class="about-info fade-up">
+                    <div class="about-card">
+                        <div class="about-icon">🎓</div>
+                        <h3>Education</h3>
+                        <p>방송통신대학교 컴퓨터과학과 2학년</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">🤖</div>
+                        <h3>AI Training</h3>
+                        <p>FastCampus AI LAB 18기 수료 (6개월)</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">🏆</div>
+                        <h3>Competition</h3>
+                        <p>DAKER 공모전 9위 / 205팀 (상위 4.4%)</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">💡</div>
+                        <h3>Philosophy</h3>
+                        <p>AI의 빠른 발전에 맞서 지속적으로 배우고, 시스템으로 문제를 해결합니다.</p>
+                    </div>
+                </div>
+                <div class="about-skills fade-up delay-1">
+                    <h3>Tech Stack</h3>
+                    <div class="skill-category">
+                        <h4>AI / Data</h4>
+                        <div class="skill-tags">
+                            <span>LangChain</span><span>LangGraph</span><span>ChromaDB</span>
+                            <span>RAG</span><span>MCP</span><span>Gemini</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="skill-tags">
+                            <span>React</span><span>TypeScript</span><span>Tailwind CSS</span>
+                            <span>Streamlit</span><span>Vite</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <div class="skill-tags">
+                            <span>FastAPI</span><span>Python</span><span>SQLite</span>
+                            <span>SQLAlchemy</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>DevOps / Tools</h4>
+                        <div class="skill-tags">
+                            <span>Docker</span><span>Git</span><span>Selenium</span>
+                            <span>Playwright</span><span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-up">Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card featured fade-up">
+                    <div class="project-badge">🏆 DAKER 공모전 9위 / 205팀</div>
+                    <div class="project-content">
+                        <h3>VIBE-X</h3>
+                        <p class="project-subtitle">바이브 코딩의 구조적 한계를 해결하는 통합 협업 플랫폼</p>
+                        <p class="project-desc">
+                            AI 코드 생성 도구의 "세션 종료 시 의도 증발" 문제와 "팀 협업 시 아키텍처 분열" 문제를
+                            Agent + MCP + RAG + 협업 프로토콜의 5-Layer 구조로 동시에 해결.
+                            Opus 대비 86% 비용 절감, 아키텍처 일관성 40%→90% 달성.
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">기간</span>
+                                <span>2026.01 - 02 (5주)</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">팀 구성</span>
+                                <span>2명 (본인 기여도 80%)</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">역할</span>
+                                <span>기획, 설계, 개발, 배포 (메인 개발)</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span>Python</span><span>React</span><span>FastAPI</span>
+                            <span>MCP</span><span>RAG</span><span>ChromaDB</span>
+                            <span>Docker</span><span>WebSocket</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/choidage/daker" target="_blank" class="btn btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card fade-up">
+                    <div class="project-content">
+                        <h3>Schedule Manage</h3>
+                        <p class="project-subtitle">가족 일정 관리 시스템</p>
+                        <p class="project-desc">
+                            음성인식(STT), 이미지인식(OCR), Google Calendar 연동을 통해
+                            다양한 입력 방식으로 일정을 관리하는 풀스택 웹 애플리케이션.
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">기간</span>
+                                <span>3주 (20일)</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">팀 구성</span>
+                                <span>4~5명</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">역할</span>
+                                <span>기획, UI/UX, DB 구축, 배포</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span>React</span><span>TypeScript</span><span>FastAPI</span>
+                            <span>Google Gemini</span><span>Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/choidage/always-plan" target="_blank" class="btn btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card fade-up">
+                    <div class="project-content">
+                        <h3>Naver News Blog Auto</h3>
+                        <p class="project-subtitle">네이버 뉴스 기반 자동 블로그 생성 시스템</p>
+                        <p class="project-desc">
+                            네이버 뉴스 스크래핑 → RAG 기반 블로그 자동 생성 → AI 품질 평가 →
+                            자동 발행까지의 엔드투엔드 자동화 파이프라인.
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">기간</span>
+                                <span>1주</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">팀 구성</span>
+                                <span>4~5명</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">역할</span>
+                                <span>기획, UI/UX</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span>Python</span><span>LangChain</span><span>ChromaDB</span>
+                            <span>Selenium</span><span>Slack API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/choidage/AI18_0" target="_blank" class="btn btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card fade-up">
+                    <div class="project-content">
+                        <h3>Blog Auto</h3>
+                        <p class="project-subtitle">카테고리별 트렌드 기반 블로그 자동화</p>
+                        <p class="project-desc">
+                            5개 카테고리별 실시간 트렌드 수집, 6개 데이터 소스 통합,
+                            LangGraph 워크플로우 기반 콘텐츠 생성 및 자동 발행 시스템.
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">기간</span>
+                                <span>1주</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">팀 구성</span>
+                                <span>4~5명</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">역할</span>
+                                <span>기획, UI/UX</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span>Python</span><span>LangGraph</span><span>Playwright</span>
+                            <span>Streamlit</span><span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/choidage/AI18_FINAL" target="_blank" class="btn btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card fade-up">
+                    <div class="project-content">
+                        <h3>Netflix Movie Recom</h3>
+                        <p class="project-subtitle">넷플릭스 영화 추천 시스템</p>
+                        <p class="project-desc">
+                            사용자 선호도(장르, 연도, 평점) 기반 맞춤형 영화 추천.
+                            넷플릭스 스타일 다크 테마 UI와 통계 대시보드 제공.
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">기간</span>
+                                <span>1주</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">팀 구성</span>
+                                <span>4~5명</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">역할</span>
+                                <span>기획, UI/UX</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span>Python</span><span>Streamlit</span><span>Pandas</span>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/choidage/AI18_3" target="_blank" class="btn btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title fade-up">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026.01 - 02</div>
+                        <h3>DAKER 공모전 참가</h3>
+                        <p class="timeline-role">팀 바이브제왕 | 메인 개발자</p>
+                        <p>VIBE-X 통합 협업 플랫폼 기획 및 개발. 205팀 중 9위(상위 4.4%) 달성. 2명 팀에서 전체의 80%를 담당하여 기획부터 배포까지 풀사이클 수행.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.08 - 2026.01</div>
+                        <h3>FastCampus AI LAB 18기</h3>
+                        <p class="timeline-role">6개월 과정 수료</p>
+                        <p>AI 개발 실무 교육 과정 수료. RAG, LangChain, LangGraph 등 최신 AI 기술을 활용한 4개의 팀 프로젝트 수행. 기획 및 UI/UX 역할을 주로 담당.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 -</div>
+                        <h3>방송통신대학교</h3>
+                        <p class="timeline-role">컴퓨터과학과 2학년 재학</p>
+                        <p>컴퓨터과학 이론 학습. Python, C, Java 등 프로그래밍 기초 습득.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reflection" id="reflection">
+        <div class="container">
+            <div class="reflection-card fade-up">
+                <h2>성장 이야기</h2>
+                <blockquote>
+                    "AI LAB을 경험하면서 막연하게만 알고 있던 것에 비해 비약적인 배움을 얻었습니다.
+                    하지만 AI의 발전 속도 또한 너무도 빠르게 변하기에,
+                    이 분야에서 일하기 위해서는 지속적인 배움이 필요함을 깊이 느꼈습니다."
+                </blockquote>
+                <p>
+                    바이브 코딩의 다음 단계는 더 좋은 모델이 아니라, 더 좋은 시스템에 있다고 믿습니다.
+                    기술의 본질을 이해하고, 실제 문제를 해결하는 개발자가 되겠습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-up">Contact</h2>
+            <div class="contact-links fade-up">
+                <a href="https://github.com/choidage" target="_blank" class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 최대게. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
